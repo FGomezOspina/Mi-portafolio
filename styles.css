@@ -1,0 +1,128 @@
+body {
+ background-color: rgb(4, 4, 118);
+}
+
+.header {
+    color: aliceblue;
+    width: 35%;
+    margin: 10px;
+    text-align: center;
+    font-size: 300%;
+    display: flex;
+    margin-left: 60px;
+    padding-bottom: 1%;
+}
+
+.nav {
+    width: fit-content;
+    padding: 0px 1em 8px 1em;
+    border-radius: 2%;
+    text-align: center;
+    font-size: 150%;
+    color: aliceblue;
+}
+
+.nav:hover{
+    color: aqua;
+}
+
+#navbar {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    
+}
+
+
+#home {
+    position: relative;
+    width: 100%;
+    /*justify-content: space-between;*/
+    height: auto;
+    /*background-size: cover;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    background-color: rgb(26, 82, 118);
+    margin: auto;
+    z-index: 100;
+}
+
+.content {
+    margin: 8%;
+    /*padding-left: 4vw;
+    padding-right: 60vw;*/
+    padding: 3% 20% 3% 3%;
+    width: auto;
+    height: auto;
+
+
+}
+
+.content h3 {
+    font-size: 250%;
+    /*font-weight: 700;*/
+    color: aliceblue;
+}
+
+.content h1{
+    font-size: 200%;
+    color: aliceblue;
+    margin: -6px 0;
+    
+}
+
+.content h2{
+    color: aliceblue;
+    margin: -6px 0;
+  
+}
+
+.imagen1 {
+    position: absolute;
+    top: 9%;
+    /*padding-bottom: 1%;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 5%;*/
+    right: 8%;
+    width: 33%;
+    height: 80%;
+    border-radius: 70%;
+    overflow: hidden;
+}
+
+.imagen1 img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+
+span {
+    color: rgb(59, 59, 175);
+    
+}
+
+span:hover{
+    color: aqua;
+}
+
+.footer {
+    border: 2px solid black;
+    width: auto;
+    padding-bottom: 5%;
+    color: aliceblue;
+}
+
+.logoig {
+    position: absolute;
+    left: 0.5%;
+    width: 3%;  
+    height: auto; 
+}
+
+.logoig img {
+    height: 100%;
+    width: 100%;
+}
