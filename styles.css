@@ -1,5 +1,5 @@
 body {
- background-color: rgb(4, 4, 118);
+ background-color: #015958;
 }
 
 .header {
@@ -23,7 +23,7 @@ body {
 }
 
 .nav:hover{
-    color: aqua;
+    color: #0CABA8;
 }
 
 #navbar {
@@ -43,20 +43,69 @@ body {
     background-position: center;*/
     display: flex;
     align-items: center;
-    background-color: rgb(26, 82, 118);
+    background-color: #023535;
     margin: auto;
     z-index: 100;
 }
+
+#home2 {
+    border: 2px solid black;
+    position: relative;
+    width: 100%;
+    /*justify-content: space-between;*/
+    /*background-size: cover;
+    background-position: center;*/
+    display: flex;
+    align-items: center;
+    background-color: #023535;
+    z-index: 100;
+    padding-bottom: 40%;
+}
+
+.Formulario {
+    position: absolute;
+    width: fit-content;
+    height: auto;
+    margin-left: 30%;
+    margin-top: 50%;
+    margin-bottom: 10%;
+    padding: 3% 20% 3% 3%;
+}
+
+#form h2{
+    align-items: center;
+    width: 140%;
+    height: fit-content;
+    font-size: 200%;
+}
+
+
+#nom-email-container{
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+.nombre, .email {
+    position: relative;
+    margin-bottom: 2%;
+    margin-right: 10%;
+    display: flex;
+}
+
+.nombre input {
+    padding-bottom: 3%;
+}
+
+
 
 .content {
     margin: 8%;
     /*padding-left: 4vw;
     padding-right: 60vw;*/
     padding: 3% 20% 3% 3%;
-    width: auto;
-    height: auto;
-
-
+   
 }
 
 .content h3 {
@@ -100,16 +149,15 @@ body {
 
 
 span {
-    color: rgb(59, 59, 175);
+    color: #008F8C;
     
 }
 
 span:hover{
-    color: aqua;
+    color: #0CABA8
 }
 
 .footer {
-    border: 2px solid black;
     width: auto;
     padding-bottom: 5%;
     color: aliceblue;
