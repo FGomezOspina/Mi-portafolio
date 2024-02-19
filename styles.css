@@ -127,6 +127,11 @@ body {
   
 }
 
+.content p {
+    color: yellow;
+
+}
+
 .imagen1 {
     position: absolute;
     top: 9%;
