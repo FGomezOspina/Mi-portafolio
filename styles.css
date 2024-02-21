@@ -35,10 +35,9 @@ body {
 
 
 #home {
-    position: relative;
+    position: relative;/*Siempre poner la position del main en relative*/
     width: 100%;
     /*justify-content: space-between;*/
-    height: auto;
     /*background-size: cover;
     background-position: center;*/
     display: flex;
@@ -58,47 +57,187 @@ body {
     display: flex;
     align-items: center;
     background-color: #023535;
+    padding-bottom: 45%;
     z-index: 100;
-    padding-bottom: 40%;
 }
+
+.contacto-cointainer {
+    border: 2px solid;
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 8%;
+}
+
 
 .Formulario {
-    position: absolute;
-    width: fit-content;
+    position: absolute;/* el abolsute se hace en cualqueir espacio de la pagina, y relative se acomoda a las dimensioanes del contenedor*/
+    width: auto;
     height: auto;
     margin-left: 30%;
-    margin-top: 50%;
-    margin-bottom: 10%;
+    margin-top: 45%;
+    margin-bottom: auto;
     padding: 3% 20% 3% 3%;
+    border: 2px solid;
+    background: #002bff;
+    border-radius: 10%;
 }
 
-#form h2{
+#contac-footer {
+    color: aliceblue;
+}
+
+.Formulario h2{
+    color: aliceblue;
     align-items: center;
     width: 140%;
     height: fit-content;
     font-size: 200%;
+    text-align: center;
 }
-
 
 #nom-email-container{
     width: 140%;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    
 }
 .nombre, .email {
+    border-radius: 15%;
     position: relative;
     margin-bottom: 2%;
     margin-right: 10%;
+    margin-left: 8%;
     display: flex;
+    box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
 }
 
 .nombre input {
-    padding-bottom: 3%;
+    padding-bottom: 7%;
+    border-radius: 15%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+    
 }
 
+.email input {
+    padding-bottom: 7%;
+    border-radius: 15%;
+    padding-bottom: 10%;
+    padding-left: 5%;
+}
 
+#mensaje-container {
+    width: 140%;
+    display: flex;
+    padding-bottom: 1%;
+    border: 2px solid;
+
+}
+
+ #mensaje-container input {
+    /*border-radius: 15%;*/
+    padding-bottom: 50%;
+    padding-right: 173%;
+    margin-left: 30%;
+    box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
+ }
+
+#number-cointainer {
+    border: 2px solid;
+    width: 140%;
+    display: flex;
+}
+
+#number-cointainer input{
+    margin-left: 30%;
+    padding-right: 173%;
+    box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
+}
+
+#button-cointainer {
+    border: 2px solid;
+    width: 140%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 3% 0% 3% 0%;
+  }
+
+  .bn5 {
+    padding: 0.6em 2em;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+  }
+  
+  .bn5:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowingbn5 20s linear infinite;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowingbn5 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .bn5:active {
+    color: #000;
+  }
+  
+  .bn5:active:after {
+    background: transparent;
+  }
+  
+  .bn5:hover:before {
+    opacity: 1;
+  }
+  
+  .bn5:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #191919;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
 
 .content {
     margin: 8%;
@@ -128,11 +267,14 @@ body {
 }
 
 .content p {
-    color: yellow;
+    color: aliceblue;
 
 }
 
 .imagen1 {
+    -webkit-box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
+    -moz-box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
+    box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
     position: absolute;
     top: 9%;
     /*padding-bottom: 1%;
