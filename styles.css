@@ -1,36 +1,45 @@
 body {
- background-color: #015958;
+ background-color: #0a051d;
+ 
 }
 
 .header {
     color: aliceblue;
-    width: 35%;
-    margin: 10px;
-    text-align: center;
+    width: 50%;
+    margin-left: 2%;
+    align-items: center;
     font-size: 300%;
     display: flex;
-    margin-left: 60px;
     padding-bottom: 1%;
+    font-family: 'Kanit', sans-serif;
+}
+
+.nav-global {
+    position: relative;
+    display: flex;
+    flex-direction: row;
 }
 
 .nav {
-    width: fit-content;
-    padding: 0px 1em 8px 1em;
+    height: fit-content;
     border-radius: 2%;
     text-align: center;
     font-size: 150%;
     color: aliceblue;
+    width: fit-content;
 }
 
 .nav:hover{
-    color: #0CABA8;
+    color: #a70606;
 }
 
 #navbar {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    position: relative;
+    width: 50%;    
+    align-items: center;
     justify-content: space-around;
-    
 }
 
 
@@ -42,9 +51,32 @@ body {
     background-position: center;*/
     display: flex;
     align-items: center;
-    background-color: #023535;
+    background-color: #1E2633;
     margin: auto;
     z-index: 100;
+}
+
+.content-redes {
+    display: flex;
+    flex-direction: row;
+}
+
+.redes-sociales {
+    width: 50%;
+}
+
+.buttones {
+    height: auto;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.redes-sociales svg{
+    fill: #ffff;
+    width: 100%;
+    height: 50px;
 }
 
 #home2 {
@@ -274,7 +306,7 @@ body {
 .imagen1 {
     -webkit-box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
     -moz-box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
-    box-shadow: 10px 10px 15px -5px rgba(8,112,46,1);
+    box-shadow: 10px 10px 15px -5px rgb(131 138 133);
     position: absolute;
     top: 9%;
     /*padding-bottom: 1%;
@@ -296,12 +328,12 @@ body {
 
 
 span {
-    color: #008F8C;
+    color: #a70606;
     
 }
 
 span:hover{
-    color: #0CABA8
+    color: #d71313;
 }
 
 .footer {
@@ -321,3 +353,88 @@ span:hover{
     height: 100%;
     width: 100%;
 }
+
+.Topbar {
+    position: relative;
+    width: 100%;
+    font-family: 'Kanit', sans-serif;
+    font-size: 35px;
+    display: flex;
+    padding-block: 3%;
+    justify-content: center;
+    align-items: center;
+}
+
+.Topbar span {
+    color: #ffff;
+    border-bottom: 2px solid #840606; /* Cambia el color y grosor según necesites */
+    padding-bottom: 2px; /* Espacio entre el texto y la línea */
+}
+
+section {
+    background-color:  #1E2633;
+}
+
+.mediumbar {
+    background-color: #1E2633;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding-bottom: 15%;
+    
+}
+
+.mediumbar-left {
+    color: white;
+    width: 50%;
+    margin-inline: 3%s;
+}
+
+.underline {
+    border-bottom: 5px solid #840606; /* Cambia el color y grosor según necesites */
+    padding-bottom: 2px; /* Espacio entre el texto y la línea */
+    width: 50%;
+}
+
+.mediumbar-left-title {
+    margin-inline: 3%;
+    font-size: 20px;
+}
+
+.mediumbar-left-parragraph {
+    padding-block: 6%;
+    font-size: 16px;
+    margin-inline: 3%;
+}
+
+.mediumbar-left-about {
+    display: flex;
+    justify-content: space-around;
+    margin-inline: 3%;
+    font-size: 20px;
+    
+}
+
+.mediumbar-right {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.background-red {
+    position: relative;
+    background-color: #ff0033; /* Color de fondo rojo */
+    width: 40%;
+    height: 150%;
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.background-red img {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px; /* Bordes redondeados para la imagen */
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
