@@ -1,3 +1,18 @@
+@media (max-width: 768px) {
+    .buttones {
+        flex-direction: column; /* Cambia la dirección de los botones a columna */
+        align-items: center; /* Centra los botones */
+    }
+
+    .buttones a {
+        width: 80%; /* Los botones ocuparán el 80% del ancho del contenedor */
+        margin-bottom: 10px; /* Margen entre botones en vertical */
+    }
+    .button-4 {
+        padding: 4px 12px; /* Reduce el padding en pantallas pequeñas */
+        font-size: 12px;   /* Reduce el tamaño de la fuente */
+    }
+}
 
 
 /* CSS */
