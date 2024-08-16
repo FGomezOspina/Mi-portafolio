@@ -107,6 +107,7 @@ body {
     display: flex;
     align-items: center;
     text-align: center;
+    justify-content: space-between;
     position: relative;/*Siempre poner la position del main en relative*/
     width: 100%;
     background-color: #1E2633;
@@ -332,7 +333,6 @@ body {
     margin: 8%;
     /*padding-left: 4vw;
     padding-right: 60vw;*/
-    padding: 3% 20% 3% 3%;
    
 }
 
@@ -476,7 +476,6 @@ section {
     position: relative;
     background-color: #ff0033; /* Color de fondo rojo */
     width: 40%;
-    height: 150%;
     border-radius: 10px; /* Bordes redondeados */
 }
 
@@ -484,7 +483,7 @@ section {
     width: 100%;
     height: 100%;
     border-radius: 15px; /* Bordes redondeados para la imagen */
-    position: absolute;
+    position: relative;
     right: 10px;
     top: 10px;
 }
@@ -604,8 +603,9 @@ section {
         font-size: 120%;
     }
 
+
     .imagen1 {
-        width: 100%;
+        width: 30%;
     }
 
     .container {
@@ -632,10 +632,47 @@ section {
     }
 
     .imagen1 {
-        width: 100%;
+        width: 60%;
     }
 
     #navbar {
         font-size: 70%;
+    }
+}
+
+@media (max-width: 768px) {
+    .mediumbar {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+        padding: 10px;
+    }
+
+    .mediumbar-left, .mediumbar-right {
+        width: 100%; /* Cada columna ocupa el 100% del ancho */
+        margin-bottom: 20px; /* Añade espacio entre las secciones */
+    }
+
+    .background-red {
+        width: 80%; /* Ajusta el tamaño de la imagen */
+        margin: 0 auto; /* Centra la imagen */
+    }
+
+    .mediumbar-left-about {
+        flex-direction: column; /* Cambia a columna para mejor alineación */
+        align-items: flex-start; /* Alinea el texto a la izquierda */
+    }
+}
+
+@media (max-width: 480px) {
+    .mediumbar-left, .mediumbar-right {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mediumbar-left-title p, .mediumbar-left-parragraph p {
+        font-size: 16px; /* Reduce el tamaño del texto para pantallas más pequeñas */
+    }
+
+    .mediumbar-left-about p {
+        font-size: 14px; /* Reduce aún más el tamaño del texto */
     }
 }

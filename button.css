@@ -5,7 +5,7 @@
     }
 
     .buttones a {
-        width: 80%; /* Los botones ocuparán el 80% del ancho del contenedor */
+        width: 60%; /* Los botones ocuparán el 80% del ancho del contenedor */
         margin-bottom: 10px; /* Margen entre botones en vertical */
     }
     .button-4 {
